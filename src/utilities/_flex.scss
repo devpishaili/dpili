@@ -2,8 +2,7 @@
   display: flex;
 }
 
-/* ----- Positioning ----- */
-
+/* ----- FLEX POSITIONING ----- */
 .flex-all-center {
   justify-content: center;
   align-items: center;
@@ -24,8 +23,7 @@
   justify-content: space-evenly;
 }
 
-/* ----- Direction ----- */
-
+/* ----- FLEX DIRECTION ----- */
 .flex-column {
   flex-direction: column;
 }

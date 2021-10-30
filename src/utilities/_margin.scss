@@ -1,43 +1,33 @@
-/* --- margin ---*/
-:root {
-  --size: 10px;
-  --m1: var(--size);
-  --m2: calc(var(--size) * 2);
-  --m3: calc(var(--size) * 3);
-  --m4: calc(var(--size) * 4);
-}
-
-$size: var(--size);
-
-@each $s-key, $s in (m1, var(--m1)), (m2, var(--m2)), (m3, var(--m3)),
-  (m4, var(--m4))
-{
-  /* Margin  #{$s} */
-
-  .m-all_#{$s-key} {
-    margin: #{$s};
+/* ----- MARGIN ----- */
+@for $i from 1 to 4 {
+  /* margin x#{$i} */
+  .m-all_#{$i} {
+    margin: calc(var(--size) * #{$i});
   }
-  .m-left_#{$s-key} {
-    margin-left: #{$s};
+  .m-left_#{$i} {
+    margin-left: calc(var(--size) * #{$i});
   }
-  .m-right_#{$s-key} {
-    margin-right: #{$s};
+  .m-right_#{$i} {
+    margin-right: calc(var(--size) * #{$i});
   }
-  .m-top_#{$s-key} {
-    margin-top: #{$s};
+  .m-top_#{$i} {
+    margin-top: calc(var(--size) * #{$i});
   }
-  .m-bottom_#{$s-key} {
-    margin-bottom: #{$s};
+  .m-bottom_#{$i} {
+    margin-bottom: calc(var(--size) * #{$i});
   }
-  .m-x_#{$s-key} {
-    margin: 0 #{$s};
+  .m-x_#{$i} {
+    margin: 0 calc(var(--size) * #{$i});
   }
-
-  .m-y_#{$s-key} {
-    margin: #{$s} 0;
+  .m-y_#{$i} {
+    margin: calc(var(--size) * #{$i}) 0;
   }
 }
 
 .m-unset {
   margin: 0;
+}
+
+.m-auto {
+  margin: auto;
 }

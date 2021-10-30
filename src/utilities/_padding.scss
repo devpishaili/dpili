@@ -1,40 +1,28 @@
-/* --- Padding ---*/
-:root {
-  --size: 10px;
-  --p1: var(--size);
-  --p2: calc(var(--size) * 2);
-  --p3: calc(var(--size) * 3);
-  --p4: calc(var(--size) * 4);
-}
-
-$size: var(--size);
-
-@each $s-key, $s in (p1, var(--p1)), (p2, var(--p2)), (p3, var(--p3)),
-  (p4, var(--p4))
-{
-  /* Padding  #{$s} */
-
-  .p-all_#{$s-key} {
-    padding: #{$s};
+/* ----- PADDING ----- */
+@for $i from 1 to 4 {
+  /* Padding x#{$i} */
+  .p-all_#{$i} {
+    padding: calc(var(--size) * #{$i});
   }
-  .p-left_#{$s-key} {
-    padding-left: #{$s};
+  .p-left_#{$i} {
+    padding-left: calc(var(--size) * #{$i});
   }
-  .p-right_#{$s-key} {
-    padding-right: #{$s};
+  .p-right_#{$i} {
+    padding-right: calc(var(--size) * #{$i});
   }
-  .p-top_#{$s-key} {
-    padding-top: #{$s};
+  .p-top_#{$i} {
+    padding-top: calc(var(--size) * #{$i});
   }
-  .p-bottom_#{$s-key} {
-    padding-bottom: #{$s};
+  .p-bottom_#{$i} {
+    padding-bottom: calc(var(--size) * #{$i});
   }
-  .p-x_#{$s-key} {
-    padding: 0 #{$s};
+  .p-x_#{$i} {
+    padding-left: calc(var(--size) * #{$i});
+    padding-right: calc(var(--size) * #{$i});
   }
-
-  .p-y_#{$s-key} {
-    padding: #{$s} 0;
+  .p-y_#{$i} {
+    padding-top: calc(var(--size) * #{$i});
+    padding-bottom: calc(var(--size) * #{$i});
   }
 }
 
