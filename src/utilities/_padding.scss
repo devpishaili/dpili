@@ -1,0 +1,43 @@
+/* --- Padding ---*/
+:root {
+  --size: 10px;
+  --p1: var(--size);
+  --p2: calc(var(--size) * 2);
+  --p3: calc(var(--size) * 3);
+  --p4: calc(var(--size) * 4);
+}
+
+$size: var(--size);
+
+@each $s-key, $s in (p1, var(--p1)), (p2, var(--p2)), (p3, var(--p3)),
+  (p4, var(--p4))
+{
+  /* Padding  #{$s} */
+
+  .p-all_#{$s-key} {
+    padding: #{$s};
+  }
+  .p-left_#{$s-key} {
+    padding-left: #{$s};
+  }
+  .p-right_#{$s-key} {
+    padding-right: #{$s};
+  }
+  .p-top_#{$s-key} {
+    padding-top: #{$s};
+  }
+  .p-bottom_#{$s-key} {
+    padding-bottom: #{$s};
+  }
+  .p-x_#{$s-key} {
+    padding: 0 #{$s};
+  }
+
+  .p-y_#{$s-key} {
+    padding: #{$s} 0;
+  }
+}
+
+.p-unset {
+  padding: 0;
+}
