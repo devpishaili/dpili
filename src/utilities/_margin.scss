@@ -1,0 +1,43 @@
+/* --- margin ---*/
+:root {
+  --size: 10px;
+  --m1: var(--size);
+  --m2: calc(var(--size) * 2);
+  --m3: calc(var(--size) * 3);
+  --m4: calc(var(--size) * 4);
+}
+
+$size: var(--size);
+
+@each $s-key, $s in (m1, var(--m1)), (m2, var(--m2)), (m3, var(--m3)),
+  (m4, var(--m4))
+{
+  /* Margin  #{$s} */
+
+  .m-all_#{$s-key} {
+    margin: #{$s};
+  }
+  .m-left_#{$s-key} {
+    margin-left: #{$s};
+  }
+  .m-right_#{$s-key} {
+    margin-right: #{$s};
+  }
+  .m-top_#{$s-key} {
+    margin-top: #{$s};
+  }
+  .m-bottom_#{$s-key} {
+    margin-bottom: #{$s};
+  }
+  .m-x_#{$s-key} {
+    margin: 0 #{$s};
+  }
+
+  .m-y_#{$s-key} {
+    margin: #{$s} 0;
+  }
+}
+
+.m-unset {
+  margin: 0;
+}
