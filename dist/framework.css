@@ -14,10 +14,22 @@
   display: flex;
 }
 
-.flex-X-Y-center {
+.flex-all-center {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.flex-j-center {
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.flex-a-center {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;

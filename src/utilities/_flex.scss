@@ -1,7 +1,13 @@
 .flex {
   display: flex;
 }
-.flex-X-Y-center {
+.flex-all-center {
   justify-content: center;
+  align-items: center;
+}
+.flex-j-center {
+  justify-content: center;
+}
+.flex-a-center {
   align-items: center;
 }
