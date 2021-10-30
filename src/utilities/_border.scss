@@ -1,0 +1,15 @@
+:root {
+  --border-size: calc(var(--size) / 2);
+}
+
+/* ----- BORDER RADIUS ----- */
+@for $i from 1 to 6 {
+  /* Border radius x#{$i} */
+  .rounded-radius_#{$i} {
+    border-radius: calc(var(--border-size) * #{$i});
+  }
+}
+
+.rounded-radius_auto {
+  border-radius: 50%;
+}

@@ -271,6 +271,40 @@
   margin: auto;
 }
 
+:root {
+  --border-size: calc(var(--size) / 2);
+}
+
+/* ----- BORDER RADIUS ----- */
+/* Border radius x1 */
+.rounded-radius_1 {
+  border-radius: calc(var(--border-size) * 1);
+}
+
+/* Border radius x2 */
+.rounded-radius_2 {
+  border-radius: calc(var(--border-size) * 2);
+}
+
+/* Border radius x3 */
+.rounded-radius_3 {
+  border-radius: calc(var(--border-size) * 3);
+}
+
+/* Border radius x4 */
+.rounded-radius_4 {
+  border-radius: calc(var(--border-size) * 4);
+}
+
+/* Border radius x5 */
+.rounded-radius_5 {
+  border-radius: calc(var(--border-size) * 5);
+}
+
+.rounded-radius_auto {
+  border-radius: 50%;
+}
+
 html {
   width: 100%;
   height: 100%;
