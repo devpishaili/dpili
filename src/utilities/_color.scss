@@ -1,3 +1,19 @@
 /* ----- BACKGROUND COLORS ----- */
-
+.responsive-text {
+  @include xs {
+    color: red;
+  }
+  @include sm {
+    color: blue;
+  }
+  @include md {
+    color: purple;
+  }
+  @include lg {
+    color: rgb(128, 109, 0);
+  }
+  @include xl {
+    color: rgba(0, 128, 38, 0.5);
+  }
+}
 /* ----- TEXT COLORS ----- */
