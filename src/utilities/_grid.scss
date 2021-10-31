@@ -50,10 +50,6 @@ $layout-values: (
   .gap-#{$key} > * {
     padding: $val;
   }
-  .gap-#{$key} {
-    margin-left: -$val;
-    margin-right: -$val;
-  }
 }
 
 /* GRID COLUMN CLASSES */
