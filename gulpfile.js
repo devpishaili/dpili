@@ -6,7 +6,7 @@ function buildStyles() {
 }
 
 function watchTask() {
-  watch("src/framework.scss", buildStyles);
+  watch("src/**/*.scss", buildStyles);
 }
 
 exports.default = series(buildStyles, watchTask);
