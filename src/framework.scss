@@ -1,3 +1,7 @@
+/* ***************************************************** */
+/* ************ CREATED BY: PAUL ISHAILI C. ************ */
+/* ***************************************************** */
+
 :root {
   --size: 10px;
 }
@@ -15,6 +19,18 @@
   }
 }
 
+.container {
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+.row {
+  display: flex;
+  flex-flow: row wrap;
+  width: 100%;
+}
+
 @import "./utilities/all";
 @import "./components/all";
 @import "./themes/all";
@@ -29,3 +45,6 @@ body {
   height: 100%;
   width: 100%;
 }
+/* ***************************************************** */
+/* ************ 💙 HOPE YOU ENJOYED IT? 💙 ************ */
+/* ***************************************************** */

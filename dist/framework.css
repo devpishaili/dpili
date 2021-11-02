@@ -1,3 +1,7 @@
+@charset "UTF-8";
+/* ***************************************************** */
+/* ************ CREATED BY: PAUL ISHAILI C. ************ */
+/* ***************************************************** */
 :root {
   --size: 10px;
 }
@@ -12,43 +16,243 @@
   padding: 0;
 }
 
-.flex {
+.container {
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.row {
+  display: flex;
+  flex-flow: row wrap;
+  width: 100%;
+}
+
+.ft-w-1 {
+  font-weight: 100;
+}
+
+.ft-w-2 {
+  font-weight: 200;
+}
+
+.ft-w-3 {
+  font-weight: 300;
+}
+
+.ft-w-5 {
+  font-weight: 500;
+}
+
+.ft-w-7 {
+  font-weight: 700;
+}
+
+.ft-w-9 {
+  font-weight: 900;
+}
+
+/* ----- BACKGROUND COLORS ----- */
+@media (min-width: 0) {
+  .responsive-text {
+    color: red;
+  }
+}
+@media (min-width: 480px) {
+  .responsive-text {
+    color: blue;
+  }
+}
+@media (min-width: 720px) {
+  .responsive-text {
+    color: purple;
+  }
+}
+@media (min-width: 960px) {
+  .responsive-text {
+    color: #806d00;
+  }
+}
+@media (min-width: 1200px) {
+  .responsive-text {
+    color: rgba(0, 128, 38, 0.5);
+  }
+}
+
+/* ----- TEXT COLORS ----- */
+.pos-rel {
+  position: relative;
+}
+
+.pos-abs {
+  position: absolute;
+}
+
+.pos-stky {
+  position: sticky;
+}
+
+.pos-fixed {
+  position: fixed;
+}
+
+.dis-none {
+  display: none;
+}
+
+.dis-flex {
   display: flex;
 }
 
-/* ----- FLEX POSITIONING ----- */
-.flex-all-center {
+.dis-grid {
+  display: grid;
+}
+
+.dis-block {
+  display: "block";
+}
+
+.dis-inline {
+  display: inline;
+}
+
+.dis-i-flex {
+  display: inline-flex;
+}
+
+.dis-i-block {
+  display: inline-block;
+}
+
+.jus-cont-fs {
+  /* justify content flex-start */
+  justify-content: flex-start;
+}
+
+.jus-items-fs {
+  /* justify items flex-start */
+  justify-items: flex-start;
+}
+
+.align-cont-fs {
+  /* align content flex-start */
+  align-content: flex-start;
+}
+
+.align-items-fs {
+  /* align items flex-start */
+  align-items: flex-start;
+}
+
+/*   Justify all and Align all : flex-start*/
+.jus-all-align-all-fs {
+  justify-content: flex-start;
+  align-items: flex-start;
+}
+
+.jus-cont-fe {
+  /* justify content flex-end */
+  justify-content: flex-end;
+}
+
+.jus-items-fe {
+  /* justify items flex-end */
+  justify-items: flex-end;
+}
+
+.align-cont-fe {
+  /* align content flex-end */
+  align-content: flex-end;
+}
+
+.align-items-fe {
+  /* align items flex-end */
+  align-items: flex-end;
+}
+
+/*   Justify all and Align all : flex-end*/
+.jus-all-align-all-fe {
+  justify-content: flex-end;
+  align-items: flex-end;
+}
+
+.jus-cont-c {
+  /* justify content center */
+  justify-content: center;
+}
+
+.jus-items-c {
+  /* justify items center */
+  justify-items: center;
+}
+
+.align-cont-c {
+  /* align content center */
+  align-content: center;
+}
+
+.align-items-c {
+  /* align items center */
+  align-items: center;
+}
+
+/*   Justify all and Align all : center*/
+.jus-all-align-all-c {
   justify-content: center;
   align-items: center;
 }
 
-.flex-j-center {
-  justify-content: center;
-}
-
-.flex-a-center {
-  align-items: center;
-}
-
-.flex-j-sa {
-  justify-content: space-around;
-}
-
-.flex-j-sb {
+.jus-cont-sb {
+  /* justify content space-between */
   justify-content: space-between;
 }
 
-.flex-j-se {
-  justify-content: space-evenly;
+.jus-items-sb {
+  /* justify items space-between */
+  justify-items: space-between;
 }
 
-/* ----- FLEX DIRECTION ----- */
-.flex-column {
-  flex-direction: column;
+.align-cont-sb {
+  /* align content space-between */
+  align-content: space-between;
 }
 
-.flex-row {
-  flex-direction: row;
+.align-items-sb {
+  /* align items space-between */
+  align-items: space-between;
+}
+
+/*   Justify all and Align all : space-between*/
+.jus-all-align-all-sb {
+  justify-content: space-between;
+  align-items: space-between;
+}
+
+.jus-cont-sa {
+  /* justify content space-around */
+  justify-content: space-around;
+}
+
+.jus-items-sa {
+  /* justify items space-around */
+  justify-items: space-around;
+}
+
+.align-cont-sa {
+  /* align content space-around */
+  align-content: space-around;
+}
+
+.align-items-sa {
+  /* align items space-around */
+  align-items: space-around;
+}
+
+/*   Justify all and Align all : space-around*/
+.jus-all-align-all-sa {
+  justify-content: space-around;
+  align-items: space-around;
 }
 
 /* ----- PADDING ----- */
@@ -279,72 +483,13 @@
   border-radius: 50%;
 }
 
-/* ----- BACKGROUND COLORS ----- */
-@media (min-width: 0) {
-  .responsive-text {
-    color: red;
-  }
-}
-@media (min-width: 480px) {
-  .responsive-text {
-    color: blue;
-  }
-}
-@media (min-width: 720px) {
-  .responsive-text {
-    color: purple;
-  }
-}
-@media (min-width: 960px) {
-  .responsive-text {
-    color: #806d00;
-  }
-}
-@media (min-width: 1200px) {
-  .responsive-text {
-    color: rgba(0, 128, 38, 0.5);
-  }
+/* ----- FLEX DIRECTION ----- */
+.flex-column {
+  flex-direction: column;
 }
 
-/* ----- TEXT COLORS ----- */
-/* GRID LAYOUT */
-.grid-layout {
-  display: grid;
-}
-
-.container {
-  width: 100%;
-  max-width: 1200px;
-  margin: 0 auto;
-  padding: 0 20px;
-}
-
-.row {
-  display: flex;
-  flex-flow: row wrap;
-  width: 100%;
-}
-
-/* */
-/* GRID POSITIONS */
-.justify-fs {
-  justify-content: flex-start;
-}
-
-.justify-fe {
-  justify-content: flex-end;
-}
-
-.justify-c {
-  justify-content: center;
-}
-
-.justify-sb {
-  justify-content: space-between;
-}
-
-.justify-sa {
-  justify-content: space-around;
+.flex-row {
+  flex-direction: row;
 }
 
 .grid-all-center {
@@ -685,3 +830,7 @@ body {
   height: 100%;
   width: 100%;
 }
+
+/* ***************************************************** */
+/* ************ 💙 HOPE YOU ENJOYED IT? 💙 ************ */
+/* ***************************************************** */

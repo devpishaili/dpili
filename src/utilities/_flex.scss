@@ -1,28 +1,3 @@
-.flex {
-  display: flex;
-}
-
-/* ----- FLEX POSITIONING ----- */
-.flex-all-center {
-  justify-content: center;
-  align-items: center;
-}
-.flex-j-center {
-  justify-content: center;
-}
-.flex-a-center {
-  align-items: center;
-}
-.flex-j-sa {
-  justify-content: space-around;
-}
-.flex-j-sb {
-  justify-content: space-between;
-}
-.flex-j-se {
-  justify-content: space-evenly;
-}
-
 /* ----- FLEX DIRECTION ----- */
 .flex-column {
   flex-direction: column;

@@ -1,7 +1,11 @@
-@import "./flex";
+@use "sass:math";
+@import "./media";
+@import "./font";
+@import "./color";
+@import "./position";
+@import "./display";
 @import "./padding";
 @import "./margin";
 @import "./border";
-@import "./media";
-@import "./color";
+@import "./flex";
 @import "./grid";

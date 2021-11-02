@@ -1,0 +1,49 @@
+$displays: (
+  "none": none,
+  "flex": flex,
+  "grid": grid,
+  "block": "block",
+  "inline": inline,
+  "i-flex": inline-flex,
+  "i-block": inline-block,
+);
+
+@each $key, $val in $displays {
+  .dis-#{$key} {
+    display: $val;
+  }
+}
+
+$layout-type: (
+  "jus": justify,
+  "align": align,
+);
+$layout-values: (
+  "fs": flex-start,
+  "fe": flex-end,
+  "c": center,
+  "sb": space-between,
+  "sa": space-around,
+);
+$layout-props: (
+  "cont": content,
+  "items": items,
+  "all": all,
+);
+@each $style, $style-val in $layout-values {
+  @each $type, $type-val in $layout-type {
+    @each $prop, $prop-val in $layout-props {
+      .#{$type}-#{$prop}-#{$style} {
+        @if ($prop != all) {
+          /* #{$type-val} #{$prop-val} #{$style-val} */
+          #{$type-val}-#{$prop-val}: #{$style-val};
+        }
+      }
+    }
+  }
+  /*   Justify all and Align all : #{$style-val}*/
+  .jus-all-align-all-#{$style} {
+    justify-content: $style-val;
+    align-items: $style-val;
+  }
+}
