@@ -29,27 +29,39 @@
   width: 100%;
 }
 
-.ft-w-1 {
+.ft-w-100 {
   font-weight: 100;
 }
 
-.ft-w-2 {
+.ft-w-200 {
   font-weight: 200;
 }
 
-.ft-w-3 {
+.ft-w-300 {
   font-weight: 300;
 }
 
-.ft-w-5 {
+.ft-w-400 {
+  font-weight: 400;
+}
+
+.ft-w-500 {
   font-weight: 500;
 }
 
-.ft-w-7 {
+.ft-w-600 {
+  font-weight: 600;
+}
+
+.ft-w-700 {
   font-weight: 700;
 }
 
-.ft-w-9 {
+.ft-w-800 {
+  font-weight: 800;
+}
+
+.ft-w-900 {
   font-weight: 900;
 }
 
@@ -829,6 +841,16 @@ html {
 body {
   height: 100%;
   width: 100%;
+}
+
+img {
+  height: 100%;
+  width: 100%;
+}
+
+button {
+  border: none;
+  outline: none;
 }
 
 /* ***************************************************** */

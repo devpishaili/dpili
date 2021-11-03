@@ -1,14 +1,5 @@
-$font-weights: (
-  "1": 100,
-  "2": 200,
-  "3": 300,
-  "5": 500,
-  "7": 700,
-  "9": 900,
-);
-
-@each $font-weight, $font-weight-val in $font-weights {
-  .ft-w-#{$font-weight} {
-    font-weight: $font-weight-val;
+@for $i from 1 through 9 {
+  .ft-w-#{($i * 100)} {
+    font-weight: #{$i * 100};
   }
 }
