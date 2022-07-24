@@ -1,5 +1,5 @@
 /* ----- MARGIN ----- */
-@for $i from 1 to 4 {
+@for $i from 1 to 6 {
   /* margin x#{$i} */
   .m-all_#{$i} {
     margin: calc(var(--size) * #{$i});
