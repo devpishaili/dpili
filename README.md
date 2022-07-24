@@ -5,3 +5,8 @@
 <h4> Inspired by
   <a href="https://tailwindcss.com/" target="_blank">TailWindCSS Library</a>
 </h4>
+
+
+## https://cdn.jsdelivr.net/gh/devpishaili/dpili/dist/dpili.css
+
+## https://cdn.jsdelivr.net/gh/devpishaili/dpili/dist/dpili.min.css
