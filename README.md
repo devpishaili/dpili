@@ -1,4 +1,4 @@
-# framework-stylesheets
+# Dpili CSS
 <p>
   A version of my prebuilt framework that can be used as a quickstart template for web development projects and mini PWA tasks.
 </p>
