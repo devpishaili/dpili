@@ -8,7 +8,10 @@
 
 * {
   font-family: inherit;
-  user-select: none;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
 }
 *, *::before, *::after {
   box-sizing: border-box;
@@ -83,7 +86,7 @@
 }
 @media (min-width: 960px) {
   .responsive-text {
-    color: #806d00;
+    color: rgb(128, 109, 0);
   }
 }
 @media (min-width: 1200px) {
@@ -102,6 +105,7 @@
 }
 
 .pos-stky {
+  position: -webkit-sticky;
   position: sticky;
 }
 
@@ -532,57 +536,46 @@
     flex-grow: 0;
     width: 8.3333333333%;
   }
-
   .col-2-xs {
     flex-grow: 0;
     width: 16.6666666667%;
   }
-
   .col-3-xs {
     flex-grow: 0;
     width: 25%;
   }
-
   .col-4-xs {
     flex-grow: 0;
     width: 33.3333333333%;
   }
-
   .col-5-xs {
     flex-grow: 0;
     width: 41.6666666667%;
   }
-
   .col-6-xs {
     flex-grow: 0;
     width: 50%;
   }
-
   .col-7-xs {
     flex-grow: 0;
     width: 58.3333333333%;
   }
-
   .col-8-xs {
     flex-grow: 0;
     width: 66.6666666667%;
   }
-
   .col-9-xs {
     flex-grow: 0;
     width: 75%;
   }
-
   .col-10-xs {
     flex-grow: 0;
     width: 83.3333333333%;
   }
-
   .col-11-xs {
     flex-grow: 0;
     width: 91.6666666667%;
   }
-
   .col-12-xs {
     flex-grow: 0;
     width: 100%;
@@ -593,57 +586,46 @@
     flex-grow: 0;
     width: 8.3333333333%;
   }
-
   .col-2-sm {
     flex-grow: 0;
     width: 16.6666666667%;
   }
-
   .col-3-sm {
     flex-grow: 0;
     width: 25%;
   }
-
   .col-4-sm {
     flex-grow: 0;
     width: 33.3333333333%;
   }
-
   .col-5-sm {
     flex-grow: 0;
     width: 41.6666666667%;
   }
-
   .col-6-sm {
     flex-grow: 0;
     width: 50%;
   }
-
   .col-7-sm {
     flex-grow: 0;
     width: 58.3333333333%;
   }
-
   .col-8-sm {
     flex-grow: 0;
     width: 66.6666666667%;
   }
-
   .col-9-sm {
     flex-grow: 0;
     width: 75%;
   }
-
   .col-10-sm {
     flex-grow: 0;
     width: 83.3333333333%;
   }
-
   .col-11-sm {
     flex-grow: 0;
     width: 91.6666666667%;
   }
-
   .col-12-sm {
     flex-grow: 0;
     width: 100%;
@@ -654,57 +636,46 @@
     flex-grow: 0;
     width: 8.3333333333%;
   }
-
   .col-2-md {
     flex-grow: 0;
     width: 16.6666666667%;
   }
-
   .col-3-md {
     flex-grow: 0;
     width: 25%;
   }
-
   .col-4-md {
     flex-grow: 0;
     width: 33.3333333333%;
   }
-
   .col-5-md {
     flex-grow: 0;
     width: 41.6666666667%;
   }
-
   .col-6-md {
     flex-grow: 0;
     width: 50%;
   }
-
   .col-7-md {
     flex-grow: 0;
     width: 58.3333333333%;
   }
-
   .col-8-md {
     flex-grow: 0;
     width: 66.6666666667%;
   }
-
   .col-9-md {
     flex-grow: 0;
     width: 75%;
   }
-
   .col-10-md {
     flex-grow: 0;
     width: 83.3333333333%;
   }
-
   .col-11-md {
     flex-grow: 0;
     width: 91.6666666667%;
   }
-
   .col-12-md {
     flex-grow: 0;
     width: 100%;
@@ -715,57 +686,46 @@
     flex-grow: 0;
     width: 8.3333333333%;
   }
-
   .col-2-lg {
     flex-grow: 0;
     width: 16.6666666667%;
   }
-
   .col-3-lg {
     flex-grow: 0;
     width: 25%;
   }
-
   .col-4-lg {
     flex-grow: 0;
     width: 33.3333333333%;
   }
-
   .col-5-lg {
     flex-grow: 0;
     width: 41.6666666667%;
   }
-
   .col-6-lg {
     flex-grow: 0;
     width: 50%;
   }
-
   .col-7-lg {
     flex-grow: 0;
     width: 58.3333333333%;
   }
-
   .col-8-lg {
     flex-grow: 0;
     width: 66.6666666667%;
   }
-
   .col-9-lg {
     flex-grow: 0;
     width: 75%;
   }
-
   .col-10-lg {
     flex-grow: 0;
     width: 83.3333333333%;
   }
-
   .col-11-lg {
     flex-grow: 0;
     width: 91.6666666667%;
   }
-
   .col-12-lg {
     flex-grow: 0;
     width: 100%;
@@ -776,57 +736,46 @@
     flex-grow: 0;
     width: 8.3333333333%;
   }
-
   .col-2-xl {
     flex-grow: 0;
     width: 16.6666666667%;
   }
-
   .col-3-xl {
     flex-grow: 0;
     width: 25%;
   }
-
   .col-4-xl {
     flex-grow: 0;
     width: 33.3333333333%;
   }
-
   .col-5-xl {
     flex-grow: 0;
     width: 41.6666666667%;
   }
-
   .col-6-xl {
     flex-grow: 0;
     width: 50%;
   }
-
   .col-7-xl {
     flex-grow: 0;
     width: 58.3333333333%;
   }
-
   .col-8-xl {
     flex-grow: 0;
     width: 66.6666666667%;
   }
-
   .col-9-xl {
     flex-grow: 0;
     width: 75%;
   }
-
   .col-10-xl {
     flex-grow: 0;
     width: 83.3333333333%;
   }
-
   .col-11-xl {
     flex-grow: 0;
     width: 91.6666666667%;
   }
-
   .col-12-xl {
     flex-grow: 0;
     width: 100%;
@@ -855,4 +804,4 @@ button {
 
 /* ***************************************************** */
 /* ************ 💙 HOPE YOU ENJOYED IT? 💙 ************ */
-/* ***************************************************** */
+/* ***************************************************** *//*# sourceMappingURL=dpili.css.map */
