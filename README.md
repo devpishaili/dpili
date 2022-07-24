@@ -7,6 +7,9 @@
 </h4>
 
 
-## https://cdn.jsdelivr.net/gh/devpishaili/dpili/dist/dpili.css
+## Links to Use:
+https://cdn.jsdelivr.net/gh/devpishaili/dpili/dist/dpili.css
+https://cdn.jsdelivr.net/gh/devpishaili/dpili/dist/dpili.min.css
 
-## https://cdn.jsdelivr.net/gh/devpishaili/dpili/dist/dpili.min.css
+## How to Use
+
